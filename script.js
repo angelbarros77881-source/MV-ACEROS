@@ -397,6 +397,13 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Por favor acepta la Política de Privacidad para continuar.');
       return;
     }
+
+    // 3. Cloudflare Turnstile Validation Check
+    const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]');
+    if (!turnstileResponse || !turnstileResponse.value) {
+      alert('Por favor, espera a que se complete la verificación de seguridad.');
+      return;
+    }
     
     const name = document.getElementById('quote-name').value;
     let phone = document.getElementById('quote-phone').value.trim();

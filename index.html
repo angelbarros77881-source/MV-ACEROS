@@ -17,6 +17,9 @@
   
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔩%3C/text%3E%3C/svg%3E">
+  
+  <!-- Cloudflare Turnstile (Anti-Bot) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -396,6 +399,9 @@
           <p>Completa los datos y te contactaremos pronto</p>
           <form id="cotizacionForm">
             <div class="form-grid">
+              <!-- Bot Trap (Honeypot) -->
+              <input type="text" id="bot-trap-field" name="bot_trap_field" style="display: none;" tabindex="-1" autocomplete="off">
+              
               <div class="form-group">
                 <label for="quote-name">Nombre completo</label>
                 <input type="text" id="quote-name" placeholder="Tu nombre" required>
@@ -436,9 +442,21 @@
                 <textarea id="quote-details" placeholder="Describe tu proyecto: medidas aproximadas, material preferido, presupuesto estimado, etc." rows="4"></textarea>
               </div>
             </div>
+            
+            <div class="privacy-group">
+              <label class="checkbox-container">
+                <input type="checkbox" id="quote-privacy" required>
+                <span class="checkmark"></span>
+                <span>He leído y acepto la <button type="button" class="text-link" id="openPrivacyBtn">Política de Privacidad</button></span>
+              </label>
+            </div>
+            
+            <!-- Cloudflare Turnstile Widget (Dummy Key for Testing) -->
+            <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark" style="margin-top: 15px;"></div>
+            
             <div class="form-submit">
               <button type="submit" class="btn btn-primary" id="form-submit-btn">📋 Enviar Cotización</button>
-              <a href="https://wa.me/573012339553?text=Hola%2C%20me%20interesa%20cotizar%20un%20trabajo%20en%20acero%20inoxidable" target="_blank" class="btn btn-whatsapp" id="form-whatsapp-btn">💬 WhatsApp</a>
+              <a href="#" class="btn btn-whatsapp wa-link" data-type="quote" id="form-whatsapp-btn">💬 WhatsApp</a>
             </div>
           </form>
         </div>
@@ -558,6 +576,21 @@
         <h4 id="lightboxTitle"></h4>
         <p id="lightboxDesc"></p>
       </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY MODAL -->
+  <div class="privacy-modal" id="privacyModal">
+    <div class="privacy-modal-content">
+      <button class="privacy-close" id="privacyClose" aria-label="Cerrar">✕</button>
+      <h3>Política de Privacidad y Tratamiento de Datos</h3>
+      <div class="privacy-text">
+        <p>De acuerdo con lo establecido en la <strong>Ley Estatutaria 1581 de 2012</strong> (Protección de Datos Personales) y sus decretos reglamentarios, le informamos lo siguiente:</p>
+        <p>1. <strong>Finalidad:</strong> Los datos personales suministrados en este formulario serán utilizados única y exclusivamente para contactarlo y brindarle la cotización o información sobre los servicios de acero inoxidable solicitados.</p>
+        <p>2. <strong>Seguridad:</strong> Sus datos están protegidos y no serán compartidos, vendidos ni transferidos a terceros bajo ninguna circunstancia. No utilizamos sus datos para envío de spam o marketing masivo no solicitado.</p>
+        <p>3. <strong>Derechos:</strong> Como titular de los datos, usted tiene derecho a conocer, actualizar, rectificar y solicitar la eliminación de su información personal en cualquier momento, contactándonos a través de nuestro número de WhatsApp.</p>
+      </div>
+      <button type="button" class="btn btn-primary" id="privacyAcceptBtn" style="margin-top: 24px;">Acepto la política</button>
     </div>
   </div>
 

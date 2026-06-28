@@ -1606,3 +1606,23 @@ ul, ol {
   z-index: 5;
   margin-top: -80px;
 }
+
+/* === PRIVACY CHECKBOX & MODAL === */
+.privacy-group { margin-top: 12px; }
+.checkbox-container { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--text-secondary); cursor: pointer; user-select: none; }
+.checkbox-container input { display: none; }
+.checkmark { width: 20px; height: 20px; background: rgba(255,255,255,0.05); border: 1px solid var(--border-glass); border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; transition: var(--transition-fast); }
+.checkbox-container:hover .checkmark { border-color: var(--accent-steel); }
+.checkbox-container input:checked ~ .checkmark { background: var(--gradient-steel); border-color: transparent; }
+.checkbox-container input:checked ~ .checkmark::after { content: '?'; color: white; font-size: 14px; }
+.text-link { background: none; border: none; color: var(--accent-steel-light); text-decoration: underline; cursor: pointer; font-family: inherit; font-size: inherit; padding: 0; }
+.text-link:hover { color: white; }
+.privacy-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); z-index: 10005; display: none; align-items: center; justify-content: center; padding: 20px; }
+.privacy-modal.active { display: flex; animation: fadeIn 0.3s ease; }
+.privacy-modal-content { background: var(--bg-secondary); border: 1px solid var(--border-glass); border-radius: var(--radius-lg); padding: 40px; max-width: 600px; width: 100%; position: relative; max-height: 90vh; display: flex; flex-direction: column; }
+.privacy-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-secondary); font-size: 1.2rem; cursor: pointer; transition: var(--transition-fast); }
+.privacy-close:hover { color: white; transform: rotate(90deg); }
+.privacy-modal h3 { font-family: var(--font-heading); margin-bottom: 20px; font-size: 1.4rem; color: white; }
+.privacy-text { overflow-y: auto; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; padding-right: 12px; }
+.privacy-text p { margin-bottom: 16px; }
+.privacy-text strong { color: var(--text-primary); }

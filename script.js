@@ -377,6 +377,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('.phone-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = `tel:+${getWaNum()}`;
+    });
+  });
+
   // === FORM HANDLING ===
   const cotizacionForm = document.getElementById('cotizacionForm');
   

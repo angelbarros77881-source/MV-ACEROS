@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MV Aceros Inoxidable — Fabricación, instalación y mantenimiento de barandas, pasamanos, escaleras, portones y estructuras metálicas en acero inoxidable. Barranquilla, Colombia.">
+  <meta name="keywords" content="acero inoxidable, barandas, pasamanos, escaleras, portones, rejas, Barranquilla, Colombia, fabricación, instalación, mantenimiento">
+  <meta name="author" content="MV Aceros Inoxidable">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MV Aceros Inoxidable — Fabricación, Instalación y Mantenimiento">
+  <meta property="og:description" content="Transformamos el acero en obras de arte. Barandas, escaleras, portones y más en acero inoxidable. Servicio en toda Colombia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  
+  <title>MV Aceros Inoxidable | Fabricación, Instalación y Mantenimiento en Acero Inoxidable</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔩%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">MV ACEROS</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#inicio" class="nav-logo">
+        <div class="nav-logo-icon">MV</div>
+        <div class="nav-logo-text"><span>Aceros Inoxidable</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#cotizar">Cotizar</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="nav-cta wa-link" data-type="quote">💬 WhatsApp</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="images/hero-bg.png" alt="Trabajo en acero inoxidable de alta calidad" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Servimos en toda Colombia 🇨🇴
+        </div>
+        <h1 class="hero-title">
+          Transformamos el<br>
+          <span class="highlight shimmer">acero inoxidable</span><br>
+          en obras de arte
+        </h1>
+        <p class="hero-subtitle">
+          Fabricación, instalación y mantenimiento de estructuras en acero inoxidable y hierro. Calidad premium, diseños modernos y atención personalizada desde Barranquilla para toda Colombia.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-whatsapp wa-link" data-type="quote" id="hero-whatsapp-btn">
+            💬 Cotizar por WhatsApp
+          </a>
+          <a href="#galeria" class="btn btn-secondary" id="hero-gallery-btn">
+            🖼️ Ver Trabajos
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="500">0</div>
+            <div class="stat-label">Proyectos realizados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="100">0%</div>
+            <div class="stat-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES: FABRICACIÓN, INSTALACIÓN, MANTENIMIENTO -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="pillar-number">01</div>
+          <div class="pillar-icon">🔨</div>
+          <h3>Fabricación</h3>
+          <p>Fabricamos piezas a la medida con acero inoxidable y hierro de la más alta calidad. Cada proyecto es único y hecho con precisión artesanal.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-2">
+          <div class="pillar-number">02</div>
+          <div class="pillar-icon">⚙️</div>
+          <h3>Instalación</h3>
+          <p>Instalación profesional en obra con acabados impecables. Nos encargamos de todo el proceso para que no te preocupes por nada.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-4">
+          <div class="pillar-number">03</div>
+          <div class="pillar-icon">🛡️</div>
+          <h3>Mantenimiento</h3>
+          <p>Servicio de mantenimiento y restauración para que tus estructuras luzcan como nuevas. Cuidamos tu inversión a largo plazo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ Lo que hacemos</span>
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Ofrecemos soluciones completas en acero inoxidable y hierro para proyectos residenciales, comerciales e industriales.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🏗️</div>
+          <h3>Barandas y Pasamanos</h3>
+          <p>Diseños modernos en acero inoxidable con vidrio templado o barras horizontales. Elegancia y seguridad para escaleras, balcones y terrazas.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Acero 304</span>
+            <span class="service-feature-tag">Vidrio templado</span>
+            <span class="service-feature-tag">A medida</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🪜</div>
+          <h3>Escaleras</h3>
+          <p>Escaleras con estructura metálica y barandas en acero inoxidable. Diseños rectos, en L, en U y caracol adaptados a tu espacio.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Diseño personalizado</span>
+            <span class="service-feature-tag">LED integrado</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🚪</div>
+          <h3>Puertas y Portones</h3>
+          <p>Portones de seguridad con diseños exclusivos. Corredizos, abatibles y plegables en acero y hierro de alta resistencia.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Corredizo</span>
+            <span class="service-feature-tag">Abatible</span>
+            <span class="service-feature-tag">Alta seguridad</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">🏢</div>
+          <h3>Estructuras Metálicas</h3>
+          <p>Columnas decorativas, pérgolas, techos y estructuras a gran escala. Trabajos para proyectos comerciales e industriales.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Comercial</span>
+            <span class="service-feature-tag">Industrial</span>
+            <span class="service-feature-tag">Residencial</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-icon">🔒</div>
+          <h3>Rejas de Seguridad</h3>
+          <p>Rejas y protecciones para ventanas y puertas con diseños que combinan seguridad y estética sin comprometer la vista.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Protección total</span>
+            <span class="service-feature-tag">Diseño elegante</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-5">
+          <div class="service-icon">🪑</div>
+          <h3>Mobiliario Industrial</h3>
+          <p>Muebles estilo industrial en hierro y madera: repisas, estantes, percheros, mesas y organizadores para el hogar o negocio.</p>
+          <div class="service-features">
+            <span class="service-feature-tag">Hierro + Madera</span>
+            <span class="service-feature-tag">Decorativo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- GALERÍA -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🖼️ Portafolio</span>
+        <h2 class="section-title">Galería de Trabajos</h2>
+        <p class="section-subtitle">Trabajos reales realizados por MV Aceros Inoxidable. Calidad que habla por sí sola.</p>
+      </div>
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="todos" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="barandas" id="filter-barandas">Barandas</button>
+        <button class="filter-btn" data-filter="escaleras" id="filter-escaleras">Escaleras</button>
+        <button class="filter-btn" data-filter="portones" id="filter-portones">Portones</button>
+        <button class="filter-btn" data-filter="estructuras" id="filter-estructuras">Estructuras</button>
+        <button class="filter-btn" data-filter="mobiliario" id="filter-mobiliario">Mobiliario</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Escaleras con vidrio y LED -->
+        <div class="gallery-item reveal" data-category="escaleras">
+          <img src="images/escalera-vidrio-led.jpeg" alt="Escalera con baranda de vidrio y LED" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Escalera con Vidrio y LED</h4>
+            <p>Diseño premium con iluminación integrada</p>
+          </div>
+        </div>
+        <!-- Baranda vidrio moderna -->
+        <div class="gallery-item reveal reveal-delay-1" data-category="barandas">
+          <img src="images/baranda-vidrio-moderna.jpeg" alt="Baranda de vidrio templado con acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Baranda con Vidrio Templado</h4>
+            <p>Acabado fino y moderno</p>
+          </div>
+        </div>
+        <!-- Portón frontal -->
+        <div class="gallery-item reveal reveal-delay-2" data-category="portones">
+          <img src="images/porton-frontal.jpeg" alt="Portón frontal de acero" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Portón Residencial</h4>
+            <p>Seguridad con diseño elegante</p>
+          </div>
+        </div>
+        <!-- Baranda balcón -->
+        <div class="gallery-item reveal" data-category="barandas">
+          <img src="images/baranda-balcon.jpeg" alt="Baranda de balcón en acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Baranda de Balcón</h4>
+            <p>Diseño curvo elegante</p>
+          </div>
+        </div>
+        <!-- Escalera completa -->
+        <div class="gallery-item reveal reveal-delay-1" data-category="escaleras">
+          <img src="images/escalera-completa.jpeg" alt="Escalera completa con baranda de acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Escalera Residencial Completa</h4>
+            <p>Baranda completa con acabado brillante</p>
+          </div>
+        </div>
+        <!-- Pasamanos comercial -->
+        <div class="gallery-item reveal reveal-delay-2" data-category="barandas">
+          <img src="images/pasamanos-comercial.jpeg" alt="Pasamanos comercial en acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Pasamanos Comercial</h4>
+            <p>Instalación para centro comercial</p>
+          </div>
+        </div>
+        <!-- Portón lateral -->
+        <div class="gallery-item reveal" data-category="portones">
+          <img src="images/porton-lateral.jpeg" alt="Portón de acero vista lateral" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Portón de Gran Formato</h4>
+            <p>Portón corredizo de alta resistencia</p>
+          </div>
+        </div>
+        <!-- Trabajo en obra -->
+        <div class="gallery-item reveal reveal-delay-1" data-category="escaleras">
+          <img src="images/trabajo-en-obra.jpeg" alt="Trabajo de instalación en obra" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Instalación en Obra</h4>
+            <p>Nuestro equipo trabajando en sitio</p>
+          </div>
+        </div>
+        <!-- Columna acero -->
+        <div class="gallery-item reveal reveal-delay-2" data-category="estructuras">
+          <img src="images/columna-acero.jpeg" alt="Columna decorativa en acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Columna Decorativa</h4>
+            <p>Revestimiento para espacio comercial</p>
+          </div>
+        </div>
+        <!-- Muebles industrial -->
+        <div class="gallery-item reveal" data-category="mobiliario">
+          <img src="images/muebles-industrial.jpeg" alt="Muebles estilo industrial" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Mobiliario Industrial</h4>
+            <p>Repisas y percheros en hierro y madera</p>
+          </div>
+        </div>
+        <!-- Muebles variedad -->
+        <div class="gallery-item reveal reveal-delay-1" data-category="mobiliario">
+          <img src="images/muebles-variedad.jpeg" alt="Variedad de muebles en hierro y madera" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Línea de Mobiliario</h4>
+            <p>Muebles, mesas, organizadores y más</p>
+          </div>
+        </div>
+        <!-- Repisas pared -->
+        <div class="gallery-item reveal reveal-delay-2" data-category="mobiliario">
+          <img src="images/repisas-pared.jpeg" alt="Repisas de pared en hierro y madera" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Repisas de Pared</h4>
+            <p>Diseño funcional y decorativo</p>
+          </div>
+        </div>
+        <!-- AI Generated - Portón premium -->
+        <div class="gallery-item reveal" data-category="portones">
+          <img src="images/galeria-porton-premium.png" alt="Portón de acero inoxidable premium" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Portón Premium</h4>
+            <p>Diseño de lujo en acero inoxidable</p>
+          </div>
+        </div>
+        <!-- AI Generated - Baranda premium -->
+        <div class="gallery-item reveal reveal-delay-1" data-category="barandas">
+          <img src="images/galeria-baranda-premium.png" alt="Baranda premium de acero inoxidable" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="view-icon">🔍</div>
+            <h4>Baranda de Balcón Premium</h4>
+            <p>Acabado espejo de alta calidad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- COTIZACIÓN -->
+  <section class="section quote-section" id="cotizar">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">📋 Cotización gratuita</span>
+        <h2 class="section-title">Solicita tu Cotización</h2>
+        <p class="section-subtitle">Cuéntanos tu proyecto y te enviamos una cotización sin compromiso.</p>
+      </div>
+      <div class="quote-grid">
+        <div class="quote-info reveal">
+          <h3>¿Por qué elegirnos?</h3>
+          <p>Con años de experiencia en el mercado, ofrecemos un servicio integral que cubre todo el proceso: desde el diseño hasta la entrega final.</p>
+          <div class="quote-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">🔨</div>
+              <div class="benefit-text">
+                <h4>Fabricación propia</h4>
+                <p>Taller equipado con tecnología para trabajos de alta precisión</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">⚙️</div>
+              <div class="benefit-text">
+                <h4>Instalación profesional</h4>
+                <p>Nuestro equipo instala en obra con acabados impecables</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🛡️</div>
+              <div class="benefit-text">
+                <h4>Mantenimiento garantizado</h4>
+                <p>Servicio post-venta y mantenimiento para tu tranquilidad</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">📐</div>
+              <div class="benefit-text">
+                <h4>Diseño personalizado</h4>
+                <p>Cada proyecto se adapta a tus necesidades y espacio</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🇨🇴</div>
+              <div class="benefit-text">
+                <h4>Cobertura nacional</h4>
+                <p>Desde Barranquilla para toda Colombia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-form reveal reveal-delay-2" id="quoteForm">
+          <h3>Formulario de cotización</h3>
+          <p>Completa los datos y te contactaremos pronto</p>
+          <form id="cotizacionForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="quote-name">Nombre completo</label>
+                <input type="text" id="quote-name" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="quote-phone">Teléfono / WhatsApp</label>
+                <input type="tel" id="quote-phone" placeholder="3001234567" required>
+              </div>
+              <div class="form-group">
+                <label for="quote-city">Ciudad</label>
+                <input type="text" id="quote-city" placeholder="Tu ciudad">
+              </div>
+              <div class="form-group">
+                <label for="quote-service">Tipo de servicio</label>
+                <select id="quote-service" required>
+                  <option value="" disabled selected>Selecciona</option>
+                  <option value="fabricacion">Fabricación</option>
+                  <option value="instalacion">Instalación</option>
+                  <option value="mantenimiento">Mantenimiento</option>
+                  <option value="fabricacion-instalacion">Fabricación + Instalación</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="quote-project">Tipo de proyecto</label>
+                <select id="quote-project" required>
+                  <option value="" disabled selected>¿Qué necesitas?</option>
+                  <option value="barandas">Barandas y Pasamanos</option>
+                  <option value="escaleras">Escaleras</option>
+                  <option value="portones">Puertas y Portones</option>
+                  <option value="rejas">Rejas de Seguridad</option>
+                  <option value="estructuras">Estructuras Metálicas</option>
+                  <option value="mobiliario">Mobiliario Industrial</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="quote-details">Detalles del proyecto</label>
+                <textarea id="quote-details" placeholder="Describe tu proyecto: medidas aproximadas, material preferido, presupuesto estimado, etc." rows="4"></textarea>
+              </div>
+              <div class="form-group full-width privacy-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="quote-privacy" required>
+                  <span class="checkmark"></span>
+                  He leído y acepto la <button type="button" class="text-link" id="openPrivacyBtn">Política de Privacidad y Tratamiento de Datos</button>
+                </label>
+              </div>
+              <input type="text" id="bot-trap-field" style="display:none !important;" tabindex="-1" autocomplete="off" placeholder="Deja esto vacío">
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary" id="form-submit-btn">📋 Enviar Cotización</button>
+              <a href="#" class="btn btn-whatsapp wa-link" data-type="quote" id="form-whatsapp-btn">💬 WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">📍 Encuéntranos</span>
+        <h2 class="section-title">Contacto Directo</h2>
+        <p class="section-subtitle">Estamos a un mensaje o una llamada de distancia. ¡Contáctanos!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="#" class="contact-card wa-link" data-type="quote" id="contact-whatsapp">
+            <div class="contact-card-icon whatsapp">💬</div>
+            <div class="contact-card-text">
+              <h4>WhatsApp</h4>
+              <p>+57 301 233 9553</p>
+              <span class="action-text">Toca para chatear →</span>
+            </div>
+          </a>
+          <a href="tel:+573012339553" class="contact-card" id="contact-phone">
+            <div class="contact-card-icon phone">📞</div>
+            <div class="contact-card-text">
+              <h4>Llamar directamente</h4>
+              <p>+57 301 233 9553</p>
+              <span class="action-text">Toca para llamar →</span>
+            </div>
+          </a>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-text">
+              <h4>Ubicación</h4>
+              <p>Barranquilla, Atlántico</p>
+              <span class="action-text">Servicio en toda Colombia 🇨🇴</span>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-card-icon">🕐</div>
+            <div class="contact-card-text">
+              <h4>Horario de atención</h4>
+              <p>Lunes a Sábado: 7:00 AM - 6:00 PM</p>
+              <span class="action-text">Respuesta rápida garantizada</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal reveal-delay-2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125268.47610384388!2d-74.89198774316408!3d10.963889200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d44d12ae605%3A0x2633753f94e0fb3f!2sBarranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1719000000000" allowfullscreen="" loading="lazy" title="Ubicación en Barranquilla, Atlántico"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo">
+            <div class="nav-logo-icon">MV</div>
+            <div class="nav-logo-text"><span>Aceros Inoxidable</span></div>
+          </a>
+          <p>Fabricación, instalación y mantenimiento de estructuras en acero inoxidable y hierro. Calidad, experiencia y compromiso desde Barranquilla para toda Colombia.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="WhatsApp" class="wa-link" data-type="general" id="footer-whatsapp">💬</a>
+            <a href="tel:+573012339553" aria-label="Teléfono" id="footer-phone">📞</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#cotizar">Cotizar</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="#servicios">Barandas y Pasamanos</a>
+          <a href="#servicios">Escaleras</a>
+          <a href="#servicios">Puertas y Portones</a>
+          <a href="#servicios">Estructuras Metálicas</a>
+          <a href="#servicios">Rejas de Seguridad</a>
+          <a href="#servicios">Mobiliario Industrial</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MV Aceros Inoxidable. Todos los derechos reservados.</p>
+        <p>Barranquilla, Atlántico — Colombia 🇨🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="#" class="whatsapp-float wa-link" data-type="quote" id="whatsapp-float">
+    <span class="whatsapp-float-tooltip">¿Necesitas una cotización? 💬</span>
+    <div class="whatsapp-float-btn">💬</div>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">›</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY MODAL -->
+  <div class="privacy-modal" id="privacyModal">
+    <div class="privacy-modal-content">
+      <button class="privacy-close" id="privacyClose" aria-label="Cerrar">✕</button>
+      <h3>Política de Tratamiento de Datos Personales</h3>
+      <div class="privacy-text">
+        <p><strong>MV Aceros Inoxidable</strong></p>
+        <p>De conformidad con la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia, te informamos sobre el tratamiento de tus datos personales:</p>
+        <p><strong>1. Finalidad del Tratamiento:</strong> Los datos personales que nos proporcionas (nombre, teléfono, ciudad) serán utilizados única y exclusivamente para gestionar tu solicitud de cotización, responder a tus preguntas y ofrecerte nuestros servicios de fabricación e instalación.</p>
+        <p><strong>2. Seguridad y Privacidad:</strong> Tus datos están seguros. No vendemos, compartimos, ni cedemos tu información a terceros bajo ninguna circunstancia. El envío de información se realiza de forma directa a nuestros canales de atención privados (WhatsApp).</p>
+        <p><strong>3. Derechos del Titular:</strong> Como titular de la información tienes derecho a conocer, actualizar y rectificar tus datos personales, así como a solicitar la eliminación de los mismos de nuestros registros en cualquier momento, contactándonos directamente a nuestros números de atención.</p>
+        <p>Al marcar la casilla y enviar este formulario, otorgas tu consentimiento expreso para el tratamiento de tus datos conforme a las finalidades descritas.</p>
+      </div>
+      <button class="btn btn-primary" id="privacyAcceptBtn" style="width: 100%; margin-top: 20px;">Entendido</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
